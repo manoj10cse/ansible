@@ -67,3 +67,14 @@ Ansible playbooks should always ends with .yml or .yaml. Anything apart from tha
 
 ```
 ansible-playbook -i inv -e ansible_user=centos -e ansible_password=DevOps321 01-sample.yml
+
+For VArs
+# {{URL}} : This is how you print a variable 
+
+# When to use "" for variables ? when the variable is the start of the line or the only one in the print list 
+
+# CLI Variable > local variable >  files_variables > prompt_variables >  global variable 
+# Prirting an undefined variable throws you exception.
+
+
+# Prompt variables : read -p 
