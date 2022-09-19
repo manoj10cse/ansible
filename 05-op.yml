@@ -6,12 +6,12 @@
       register: OUT
     
     - name: printing out variable 
-      debug: 
+      ansible.builtin.debug:  
         msg: "{{OUT.stdout}}"
   
   
 
 
-    # - name: printing the uptime status 
-    #   ansible.builtin.debug: 
-    #     msg: status of uptime is {{OUT.rc}}
+    - name: printing the uptime status 
+      ansible.builtin.debug: 
+        msg: status of uptime is {{OUT.rc}}
