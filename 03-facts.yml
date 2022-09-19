@@ -1,11 +1,10 @@
-- name: demo on variables 
-  hosts: all 
- 
-  vars_files:
-      - dev-vars.yml 
-  vars:       
-      URL: play.google.com 
+- name: demo on facts
+  hosts: all  
   tasks: 
     - name: pritning URL  
       ansible.builtin.debug:
-        msg: Url that we print is {{ URL }}  
+        msg: OS Distro is {{ansible_distribution}} 
+
+    - name: pritning Mac Address   
+      ansible.builtin.debug:
+        msg: Mac Address is  {{ansible_default_ipv4.macaddress}}
