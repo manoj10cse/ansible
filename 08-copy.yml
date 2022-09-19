@@ -1,7 +1,7 @@
-- name: demo Copy file 
+- name: demo on copy 
   hosts: all
   tasks: 
-    -name: Copy file
-     ansible.builtin.copy:
+    - name: Copy file
+      ansible.builtin.copy:
         src: /home/centos/copy.txt
         dest: /home/centos/copied.txt
