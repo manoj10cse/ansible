@@ -24,7 +24,7 @@
   
  
   # tasks: 
-  #   - name: pritning URL  
+  #   - name: To prit URL  
   #     ansible.builtin.debug:
   #       msg: Url that we print is {{ URL }}  
 
@@ -34,6 +34,6 @@
   #     vars:                 
   #       URL: task.google.com 
 
-  #   - name: Printing URL from CLI 
+  #   - name: Print URL from CLI 
   #     ansible.builtin.debug:
   #       msg: URL_CLI is {{ CLI_URL }} 
