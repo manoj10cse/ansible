@@ -1,3 +1,8 @@
 [frontend]
 frontend.santhosh.roboshop.internal
 
+[mongodb]
+mongodb.santhosh.roboshop.internal
+
+[catalogue]
+catalogue.santhosh.roboshop.internal
