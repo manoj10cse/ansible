@@ -1,10 +1,10 @@
-- name: Loops sample examples 
+- name: Loops example
   hosts: all 
   tasks:  
     - name: print course name 
       debug: 
         msg: Course Name is {{item}}
       loop:   
-        - aws
-        - gcp 
-        
+        - devops
+        - linux
+        - cloud
