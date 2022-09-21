@@ -1,4 +1,14 @@
 - name: Roboshop project setup 
+  hosts: all
+  roles:
+    - frontend
+
+
+
+
+
+
+- name: Roboshop project setup 
   hosts: "{{COMPONENT}}"
   become: yes   
   roles:
